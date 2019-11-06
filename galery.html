@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+
+/*prue de estilos-----------------------------------------------*/
+/*********************** Demo - 17 *******************/
+.box17{
+    position:relative;
+}
+.box17:after{
+    content:"";
+    width:100%;
+    height:100%;
+    background:rgba(2,162,221,.9);
+    position:absolute;top:0;
+    left:0;opacity:0;
+    transition:all .5s ease 0s;
+}
+.box17:hover:after{
+    opacity:1;
+}
+.box17 img{
+    width:100%;
+    height:auto;
+    transition:all 1.5s ease 0s;
+}
+.box17 .box-content,.box17 .icon li a{
+    position:absolute;
+    transition:all .6s ease 0s;
+}
+.box17:hover img{
+    transform:scale(1.2);
+}
+.box17 .icon{
+    width:100%;
+    height:100%;
+    list-style:none;
+    padding:0;
+    margin:0 auto;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+.box17 .icon li a{
+    width:45px;
+    height:45px;
+    line-height:45px;
+    margin:0 auto;
+    top:50%;
+    border:1px solid #fff;
+    opacity:0;
+}
+.box17:hover .icon li a{
+    top:30%;
+    opacity:1;
+}
+.box17 .icon li a:hover{
+    background:#fff;
+    color:#02a2dd;
+}
+.box17 .icon li:first-child a{
+    left:-90%;
+    right:0;
+}
+.box17:hover .icon li:first-child a{
+    left:-55px;
+}
+.box17 .icon li:last-child a{
+    right:-90%;
+    left:0;
+}
+.box17:hover .icon li:last-child a{
+    right:-55px;
+}
+.box17 .box-content{
+    width:100%;
+    padding:20px 10px;
+    background:rgba(0,0,0,.1);
+    bottom:-100px;
+    left:0;
+    z-index:1;
+}
+.box17:hover .box-content{
+    bottom:0;
+}
+.box17 .title{
+    font-size:18px;
+    font-weight:700;
+    color:#fff;
+    margin-top:0;
+}
+.box17 .post{
+    display:block;
+    font-size:14px;
+    color:#fff;
+}
+
+/*ordenado----------------*/
+.box16{
+    text-align:center;
+    color:#fff;
+    position:relative;
+}
+.box16 .box-content,.box16:after{
+    width:100%;
+    position:absolute;
+    left:0
+}
+.box16 img{
+    width:100%;
+    height:auto;
+}
+/*----------*/
+.box16 .box-content{
+    padding:20px;
+    margin-bottom:20px;
+    bottom:0;
+    z-index:1;
+}
+
+.box16 .title{
+    font-size:22px;
+    font-weight:700;
+    text-transform:uppercase;
+    margin:0 0 10px;
+}
+.box16 .post{
+    display:block;
+    padding:8px 0;
+    font-size:15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************** Demo - 16 *******************/
+.box16{
+    text-align:center;
+    color:#fff;
+    position:relative;
+}
+/*-------------------*/
+.box16 .box-content,.box16:after{
+    width:100%;
+    position:absolute;
+    left:0
+}
+
+/*
+.box16:after{
+    content:"";
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.08) 69%,rgba(0,0,0,.76) 100%);
+    top:0;transition:all .5s ease 0s;
+}*/
+/*
+.box16 .post,.box16 .title{
+    transform:translateY(145px);
+    transition:all .4s cubic-bezier(.13,.62,.81,.91) 0s;
+}*/
+/*.box16:hover:after{
+    background:linear-gradient(to bottom,rgba(0,0,0,.01) 0,rgba(0,0,0,.09) 11%,rgba(0,0,0,.12) 13%,rgba(0,0,0,.19) 20%,rgba(0,0,0,.29) 28%,rgba(0,0,0,.29) 29%,rgba(0,0,0,.42) 38%,rgba(0,0,0,.46) 43%,rgba(0,0,0,.53) 47%,rgba(0,0,0,.75) 69%,rgba(0,0,0,.87) 84%,rgba(0,0,0,.98) 99%,rgba(0,0,0,.94) 100%);
+}*/
+.box16 img{
+    width:100%;
+    height:auto;
+}
+/*----------*/
+.box16 .box-content{
+    padding:20px;
+    margin-bottom:20px;
+    bottom:0;
+    z-index:1;
+}
+
+.box16 .title{
+    font-size:22px;
+    font-weight:700;
+    text-transform:uppercase;
+    margin:0 0 10px;
+}
+.box16 .post{
+    display:block;
+    padding:8px 0;
+    font-size:15px;
+}
+/*
+.box16 .social li a,.box17 .icon li a{
+    border-radius:50%;
+    font-size:20px;
+    color:#fff;
+}
+*/
+/*
+.box16:hover .post,.box16:hover .title{
+    transform:translateY(0);
+}*/
+
+/*
+
+.box16 .social{
+    list-style:none;
+    padding:0 0 5px;
+    margin:40px 0 25px;
+    opacity:0;
+    position:relative;
+    transform:perspective(500px) rotateX(-90deg) rotateY(0) rotateZ(0);transition:all .6s cubic-bezier(0,0,.58,1) 0s;
+}
+.box16:hover .social{
+    opacity:1;
+    transform:perspective(500px) rotateX(0) rotateY(0) rotateZ(0);
+}
+.box16 .social:before{
+    content:"";
+    width:50px;
+    height:2px;
+    background:#fff;
+    margin:0 auto;
+    position:absolute;
+    top:-23px;left:0;
+    right:0;
+}
+.box16 .social li{
+    display:inline-block;
+}
+.box16 .social li a{
+    display:block;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    background:#6d3795;
+    margin-right:10px;transition:all .3s ease 0s;
+}
+.box17 .icon li,.box17 .icon li a{
+    display:inline-block;
+}
+.box16 .social li a:hover{
+    background:#bea041;
+}
+.box16 .social li:last-child a{
+    margin-right:0;
+}
+*/
+@media only screen and (max-width:990px){
+    .box16{
+        margin-bottom:30px;
+    }
+}
+
+
+</style>
+<body>
+    
+        <!------------------ Hover Effect Style : Demo - 17 --------------->
+        <div class="container mt-40">
+            <h3 class="text-center">Hover Effect Style : Demo - 17</h3>
+            <div class="row mt-30">
+                <div class="col-md-4 col-sm-6">
+                    <div class="box17">
+                        <img src="http://bestjquery.com/tutorial/hover-effect/demo120/images/img-1.jpg" alt="">
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
+                        <div class="box-content">
+                            <h3 class="title">Williamson</h3>
+                            <span class="post">Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="box17">
+                        <img src="http://bestjquery.com/tutorial/hover-effect/demo120/images/img-2.jpg" alt="">
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
+                        <div class="box-content">
+                            <h3 class="title">Kristiana</h3>
+                            <span class="post">Web Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="box17">
+                        <img src="http://bestjquery.com/tutorial/hover-effect/demo120/images/img-3.jpg" alt="">
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
+                        <div class="box-content">
+                            <h3 class="title">Kristiana</h3>
+                            <span class="post">Web Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 125px;"></div>
+        <!------------------ Hover Effect Style : Demo - 16 --------------->
+        <div class="container mt-40">
+                <h3 class="text-center">Hover Effect Style : Demo - 16</h3>
+                <div class="row mt-30">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="box16">
+                            <img src="http://bestjquery.com/tutorial/hover-effect/demo118/images/img-1.jpg">
+                            <div class="box-content">
+                                <h3 class="title">Williamson</h3>
+                                <span class="post">Web Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="box16">
+                            <img src="http://bestjquery.com/tutorial/hover-effect/demo118/images/img-2.jpg">
+                            <div class="box-content">
+                                <h3 class="title">Kristiana</h3>
+                                <span class="post">Web Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="box16">
+                            <img src="http://bestjquery.com/tutorial/hover-effect/demo118/images/img-3.jpg">
+                            <div class="box-content">
+                                <h3 class="title">Kristiana</h3>
+                                <span class="post">Web Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</body>
+</html>
